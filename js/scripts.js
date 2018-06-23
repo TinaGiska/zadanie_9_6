@@ -4,10 +4,10 @@ var add = document.getElementById('addElem'),
 
 add.addEventListener('click', function(e) {
   var currentElemts = list.getElementsByTagName('li');
-  var currentElemtsLength = currentElemts.length -1;
+  var currentElemtsLength = currentElemts.length;
  
   var element = document.createElement('li');
-  element.innerHTML = 'item ' + (currentElemtsLength + 1) ;
+  element.innerHTML = 'item ' + currentElemtsLength;
   list.appendChild(element);
   console.log(e)
 })
